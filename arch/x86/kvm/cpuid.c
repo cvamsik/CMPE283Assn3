@@ -1055,16 +1055,16 @@ bool kvm_cpuid(struct kvm_vcpu *vcpu, u32 *eax, u32 *ebx,
 EXPORT_SYMBOL_GPL(kvm_cpuid);
 
 
-static uint32_t num_exits;
+static atomic64_t num_exits;
 EXPORT_SYMBOL(num_exits);
 
-static uint64_t total_cycles;
+static atomic64_t total_cycles;
 EXPORT_SYMBOL(total_cycles);
 
-static uint64_t exit_counter[50];
+static atomic64_t exit_counter[69];
 EXPORT_SYMBOL(exit_counter);
 
-static uint64_t exit_cycles[50];
+static atomic64_t exit_cycles[69];
 EXPORT_SYMBOL(exit_cycles);
 
 int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
@@ -1079,17 +1079,17 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 	printk("eax is %d and ecx is %d",eax,ecx);
 	if(eax== 0x4FFFFFFF){
 		printk("In leaf 0x4fffffff");
-		printk("eax is 0x4fffffff num_exits is %d\n",num_exits);
-		eax=num_exits;
+		printk("eax is 0x4fffffff num_exits is %lld\n",atomic64_read(&num_exits));
+		eax=atomic64_read(&num_exits);
 		ebx=0;
 		ecx=0;
 		edx=0;
 	}
 	else if(eax== 0x4ffffffe){
 		printk("In leaf 0x4ffffffe");
-		printk("eax is 0x4ffffffe total_cycles is %lld\n",total_cycles);
-		ebx=(total_cycles>>32);
-		ecx=(total_cycles & 0xffffffff);
+		printk("eax is 0x4ffffffe total_cycles is %lld\n",atomic64_read(&total_cycles));
+		ebx=(atomic64_read(&total_cycles)>>32);
+		ecx=(atomic64_read(&total_cycles) & 0xffffffff);
 		eax=0;
 		edx=0;
 	}
@@ -1097,8 +1097,8 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 		printk("In leaf 0x4ffffffd");
 		if(ecx>=0 && ecx<=68 && ecx!=35 && ecx!=38 && ecx!=42 && ecx!=65 )
 		{
-		printk("eax is 0x4ffffffd exit_counter for ecx = %d is %lld\n",(int)ecx,exit_counter[(int)ecx]);
-		eax=exit_counter[(int)ecx];
+		printk("eax is 0x4ffffffd exit_counter for ecx = %d is %lld\n",(int)ecx,atomic64_read(&exit_counter[(int)ecx]));
+		eax=atomic64_read(&exit_counter[(int)ecx]);
 		ebx=0;
 		ecx=0;
 		edx=0;
@@ -1111,10 +1111,19 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 	}
 	else if(eax== 0x4ffffffc){
 		printk("In leaf 0x4ffffffc");
-		printk("eax is 0x4ffffffc exit_cycles for ecx = %d is %lld\n",(int)ecx,exit_cycles[(int)ecx]);
-		ebx=(exit_cycles[(int)ecx]>>32);
-		ecx=(exit_cycles[(int)ecx] & 0xffffffff);
+		printk("eax is 0x4ffffffc exit_cycles for ecx = %d is %lld\n",(int)ecx,atomic64_read(&exit_cycles[(int)ecx]));
+		ebx=(atomic64_read(&exit_cycles[(int)ecx])>>32);
+		ecx=(atomic64_read(&exit_cycles[(int)ecx]) & 0xffffffff);
 		eax=edx=0;
+	}
+	else if(eax== 0x4ffffffb){
+		printk("In leaf 0x4ffffffb");
+		eax=ebx=ecx=edx=0xffffffff;
+		uint32_t i=0;
+		for(i=0;i<69;i++)
+		{
+			printk("Exit number %d and number of exits: %lld and number of cycles: %lld ",i,atomic64_read(&exit_counter[i]),atomic64_read(&exit_cycles[i]));
+		}
 	}
 	else{
 		//printk("Executing default handler");

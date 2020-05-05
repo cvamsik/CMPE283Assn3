@@ -5844,12 +5844,12 @@ static int vmx_handle_exit(struct kvm_vcpu *vcpu,
 	struct vcpu_vmx *vmx = to_vmx(vcpu);
 	u32 exit_reason = vmx->exit_reason;
 	u32 vectoring_info = vmx->idt_vectoring_info;
-	extern uint32_t num_exits;
-	extern uint64_t total_cycles;
-	extern uint64_t exit_counter[50];
-	extern uint64_t exit_cycles[50];
+	extern atomic64_t num_exits;
+	extern atomic64_t total_cycles;
+	extern atomic64_t exit_counter[50];
+	extern atomic64_t exit_cycles[50];
 	
-	num_exits++;
+	atomic64_inc(&num_exits);
 	trace_kvm_exit(exit_reason, vcpu, KVM_ISA_VMX);
 
 	/*
@@ -5960,10 +5960,10 @@ static int vmx_handle_exit(struct kvm_vcpu *vcpu,
 		goto unexpected_vmexit;
 	int ret=kvm_vmx_exit_handlers[exit_reason](vcpu);
 	uint64_t cycle_time=rdtsc()-start_time;
-	total_cycles=cycle_time;
-	exit_counter[(int)exit_reason]=exit_counter[(int)exit_reason]+1;
-	exit_cycles[(int)exit_reason]=exit_cycles[(int)exit_reason]+cycle_time;
-	printk("Exit reason %d",exit_reason);
+	atomic64_add(cycle_time,&total_cycles);
+	atomic64_inc(&exit_counter[(int)exit_reason]);//=exit_counter[(int)exit_reason]+1;
+	atomic64_add(cycle_time,&exit_cycles[(int)exit_reason]);
+	//printk("Exit reason %d",exit_reason);
 	return ret;
 
 unexpected_vmexit:
