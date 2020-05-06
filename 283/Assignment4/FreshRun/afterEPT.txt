@@ -1,0 +1,81 @@
+innervm@innervm-Standard-PC-i440FX-PIIX-1996:~$ cpuid -l 0x4fffffff
+CPU 0:
+   0x4fffffff 0x00: eax=0x007d01ed ebx=0x00000000 ecx=0x00000000 edx=0x00000000
+CPU 1:
+   0x4fffffff 0x00: eax=0x007d0277 ebx=0x00000000 ecx=0x00000000 edx=0x00000000
+
+
+
+
+
+[  262.888084] In leaf 0x4ffffffb
+[  262.888085] Exit number 0 and number of exits: 1382111 and number of cycles: 30057321876 
+[  262.888087] Exit number 1 and number of exits: 0 and number of cycles: 0 
+[  262.888087] Exit number 2 and number of exits: 0 and number of cycles: 0 
+[  262.888087] Exit number 3 and number of exits: 0 and number of cycles: 0 
+[  262.888088] Exit number 4 and number of exits: 0 and number of cycles: 0 
+[  262.888088] Exit number 5 and number of exits: 0 and number of cycles: 0 
+[  262.888089] Exit number 6 and number of exits: 0 and number of cycles: 0 
+[  262.888089] Exit number 7 and number of exits: 0 and number of cycles: 0 
+[  262.888089] Exit number 8 and number of exits: 0 and number of cycles: 0 
+[  262.888090] Exit number 9 and number of exits: 0 and number of cycles: 0 
+[  262.888090] Exit number 10 and number of exits: 16262 and number of cycles: 156502430 
+[  262.888091] Exit number 11 and number of exits: 0 and number of cycles: 0 
+[  262.888091] Exit number 12 and number of exits: 0 and number of cycles: 0 
+[  262.888092] Exit number 13 and number of exits: 0 and number of cycles: 0 
+[  262.888092] Exit number 14 and number of exits: 163443 and number of cycles: 6530570377 
+[  262.888093] Exit number 15 and number of exits: 0 and number of cycles: 0 
+[  262.888093] Exit number 16 and number of exits: 0 and number of cycles: 0 
+[  262.888094] Exit number 17 and number of exits: 0 and number of cycles: 0 
+[  262.888094] Exit number 18 and number of exits: 0 and number of cycles: 0 
+[  262.888094] Exit number 19 and number of exits: 0 and number of cycles: 0 
+[  262.888095] Exit number 20 and number of exits: 0 and number of cycles: 0 
+[  262.888095] Exit number 21 and number of exits: 0 and number of cycles: 0 
+[  262.888095] Exit number 22 and number of exits: 0 and number of cycles: 0 
+[  262.888096] Exit number 23 and number of exits: 0 and number of cycles: 0 
+[  262.888096] Exit number 24 and number of exits: 0 and number of cycles: 0 
+[  262.888097] Exit number 25 and number of exits: 0 and number of cycles: 0 
+[  262.888097] Exit number 26 and number of exits: 0 and number of cycles: 0 
+[  262.888097] Exit number 27 and number of exits: 0 and number of cycles: 0 
+[  262.888098] Exit number 28 and number of exits: 7667001 and number of cycles: 93422167321 
+[  262.888099] Exit number 29 and number of exits: 2 and number of cycles: 48035 
+[  262.888099] Exit number 30 and number of exits: 133694 and number of cycles: 690073809 
+[  262.888100] Exit number 31 and number of exits: 346 and number of cycles: 1993455 
+[  262.888100] Exit number 32 and number of exits: 0 and number of cycles: 0 
+[  262.888101] Exit number 33 and number of exits: 0 and number of cycles: 0 
+[  262.888101] Exit number 34 and number of exits: 0 and number of cycles: 0 
+[  262.888101] Exit number 35 and number of exits: 0 and number of cycles: 0 
+[  262.888102] Exit number 36 and number of exits: 0 and number of cycles: 0 
+[  262.888102] Exit number 37 and number of exits: 0 and number of cycles: 0 
+[  262.888103] Exit number 38 and number of exits: 0 and number of cycles: 0 
+[  262.888103] Exit number 39 and number of exits: 0 and number of cycles: 0 
+[  262.888103] Exit number 40 and number of exits: 3109 and number of cycles: 37335103 
+[  262.888104] Exit number 41 and number of exits: 0 and number of cycles: 0 
+[  262.888104] Exit number 42 and number of exits: 0 and number of cycles: 0 
+[  262.888105] Exit number 43 and number of exits: 0 and number of cycles: 0 
+[  262.888105] Exit number 44 and number of exits: 0 and number of cycles: 0 
+[  262.888106] Exit number 45 and number of exits: 0 and number of cycles: 0 
+[  262.888106] Exit number 46 and number of exits: 0 and number of cycles: 0 
+[  262.888106] Exit number 47 and number of exits: 0 and number of cycles: 0 
+[  262.888107] Exit number 48 and number of exits: 0 and number of cycles: 0 
+[  262.888108] Exit number 49 and number of exits: 0 and number of cycles: 0 
+[  262.888108] Exit number 50 and number of exits: 0 and number of cycles: 0 
+[  262.888109] Exit number 51 and number of exits: 0 and number of cycles: 0 
+[  262.888109] Exit number 52 and number of exits: 0 and number of cycles: 0 
+[  262.888110] Exit number 53 and number of exits: 0 and number of cycles: 0 
+[  262.888110] Exit number 54 and number of exits: 8 and number of cycles: 45484 
+[  262.888111] Exit number 55 and number of exits: 3 and number of cycles: 60238 
+[  262.888111] Exit number 56 and number of exits: 0 and number of cycles: 0 
+[  262.888111] Exit number 57 and number of exits: 0 and number of cycles: 0 
+[  262.888112] Exit number 58 and number of exits: 119006 and number of cycles: 5143538414 
+[  262.888112] Exit number 59 and number of exits: 0 and number of cycles: 0 
+[  262.888113] Exit number 60 and number of exits: 0 and number of cycles: 0 
+[  262.888113] Exit number 61 and number of exits: 0 and number of cycles: 0 
+[  262.888113] Exit number 62 and number of exits: 0 and number of cycles: 0 
+[  262.888114] Exit number 63 and number of exits: 0 and number of cycles: 0 
+[  262.888114] Exit number 64 and number of exits: 0 and number of cycles: 0 
+[  262.888115] Exit number 65 and number of exits: 0 and number of cycles: 0 
+[  262.888115] Exit number 66 and number of exits: 0 and number of cycles: 0 
+[  262.888115] Exit number 67 and number of exits: 0 and number of cycles: 0 
+[  262.888116] Exit number 68 and number of exits: 0 and number of cycles: 0 
+

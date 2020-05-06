@@ -1,0 +1,80 @@
+innervm@innervm-Standard-PC-i440FX-PIIX-1996:~$ cpuid -l 0x4fffffff
+CPU 0:
+   0x4fffffff 0x00: eax=0x000d6dce ebx=0x00000000 ecx=0x00000000 edx=0x00000000
+CPU 1:
+   0x4fffffff 0x00: eax=0x000d6dd7 ebx=0x00000000 ecx=0x00000000 edx=0x00000000
+
+
+
+
+
+[  555.363269] In leaf 0x4ffffffb
+[  555.363271] Exit number 0 and number of exits: 6555 and number of cycles: 489080659 
+[  555.363272] Exit number 1 and number of exits: 0 and number of cycles: 0 
+[  555.363273] Exit number 2 and number of exits: 0 and number of cycles: 0 
+[  555.363274] Exit number 3 and number of exits: 0 and number of cycles: 0 
+[  555.363275] Exit number 4 and number of exits: 0 and number of cycles: 0 
+[  555.363276] Exit number 5 and number of exits: 0 and number of cycles: 0 
+[  555.363277] Exit number 6 and number of exits: 0 and number of cycles: 0 
+[  555.363278] Exit number 7 and number of exits: 0 and number of cycles: 0 
+[  555.363279] Exit number 8 and number of exits: 0 and number of cycles: 0 
+[  555.363280] Exit number 9 and number of exits: 0 and number of cycles: 0 
+[  555.363281] Exit number 10 and number of exits: 15685 and number of cycles: 131923806 
+[  555.363282] Exit number 11 and number of exits: 0 and number of cycles: 0 
+[  555.363284] Exit number 12 and number of exits: 0 and number of cycles: 0 
+[  555.363285] Exit number 13 and number of exits: 0 and number of cycles: 0 
+[  555.363286] Exit number 14 and number of exits: 0 and number of cycles: 0 
+[  555.363286] Exit number 15 and number of exits: 0 and number of cycles: 0 
+[  555.363288] Exit number 16 and number of exits: 0 and number of cycles: 0 
+[  555.363290] Exit number 17 and number of exits: 0 and number of cycles: 0 
+[  555.363290] Exit number 18 and number of exits: 0 and number of cycles: 0 
+[  555.363291] Exit number 19 and number of exits: 0 and number of cycles: 0 
+[  555.363292] Exit number 20 and number of exits: 0 and number of cycles: 0 
+[  555.363293] Exit number 21 and number of exits: 0 and number of cycles: 0 
+[  555.363294] Exit number 22 and number of exits: 0 and number of cycles: 0 
+[  555.363295] Exit number 23 and number of exits: 0 and number of cycles: 0 
+[  555.363295] Exit number 24 and number of exits: 0 and number of cycles: 0 
+[  555.363296] Exit number 25 and number of exits: 0 and number of cycles: 0 
+[  555.363297] Exit number 26 and number of exits: 0 and number of cycles: 0 
+[  555.363298] Exit number 27 and number of exits: 0 and number of cycles: 0 
+[  555.363299] Exit number 28 and number of exits: 14518 and number of cycles: 104291939 
+[  555.363300] Exit number 29 and number of exits: 2 and number of cycles: 32537 
+[  555.363301] Exit number 30 and number of exits: 494092 and number of cycles: 1705348254 
+[  555.363302] Exit number 31 and number of exits: 352 and number of cycles: 1674737 
+[  555.363303] Exit number 32 and number of exits: 0 and number of cycles: 0 
+[  555.363304] Exit number 33 and number of exits: 0 and number of cycles: 0 
+[  555.363305] Exit number 34 and number of exits: 0 and number of cycles: 0 
+[  555.363306] Exit number 35 and number of exits: 0 and number of cycles: 0 
+[  555.363307] Exit number 36 and number of exits: 0 and number of cycles: 0 
+[  555.363308] Exit number 37 and number of exits: 0 and number of cycles: 0 
+[  555.363309] Exit number 38 and number of exits: 0 and number of cycles: 0 
+[  555.363310] Exit number 39 and number of exits: 0 and number of cycles: 0 
+[  555.363311] Exit number 40 and number of exits: 2622 and number of cycles: 33309213 
+[  555.363312] Exit number 41 and number of exits: 0 and number of cycles: 0 
+[  555.363313] Exit number 42 and number of exits: 0 and number of cycles: 0 
+[  555.363314] Exit number 43 and number of exits: 0 and number of cycles: 0 
+[  555.363314] Exit number 44 and number of exits: 0 and number of cycles: 0 
+[  555.363315] Exit number 45 and number of exits: 0 and number of cycles: 0 
+[  555.363316] Exit number 46 and number of exits: 0 and number of cycles: 0 
+[  555.363317] Exit number 47 and number of exits: 0 and number of cycles: 0 
+[  555.363318] Exit number 48 and number of exits: 153700 and number of cycles: 236817771845 
+[  555.363319] Exit number 49 and number of exits: 0 and number of cycles: 0 
+[  555.363320] Exit number 50 and number of exits: 0 and number of cycles: 0 
+[  555.363321] Exit number 51 and number of exits: 0 and number of cycles: 0 
+[  555.363322] Exit number 52 and number of exits: 0 and number of cycles: 0 
+[  555.363323] Exit number 53 and number of exits: 0 and number of cycles: 0 
+[  555.363324] Exit number 54 and number of exits: 9 and number of cycles: 37694 
+[  555.363325] Exit number 55 and number of exits: 3 and number of cycles: 46718 
+[  555.363326] Exit number 56 and number of exits: 0 and number of cycles: 0 
+[  555.363327] Exit number 57 and number of exits: 0 and number of cycles: 0 
+[  555.363328] Exit number 58 and number of exits: 0 and number of cycles: 0 
+[  555.363329] Exit number 59 and number of exits: 0 and number of cycles: 0 
+[  555.363330] Exit number 60 and number of exits: 0 and number of cycles: 0 
+[  555.363330] Exit number 61 and number of exits: 0 and number of cycles: 0 
+[  555.363331] Exit number 62 and number of exits: 0 and number of cycles: 0 
+[  555.363333] Exit number 63 and number of exits: 0 and number of cycles: 0 
+[  555.363334] Exit number 64 and number of exits: 0 and number of cycles: 0 
+[  555.363335] Exit number 65 and number of exits: 0 and number of cycles: 0 
+[  555.363336] Exit number 66 and number of exits: 0 and number of cycles: 0 
+[  555.363337] Exit number 67 and number of exits: 0 and number of cycles: 0 
+[  555.363338] Exit number 68 and number of exits: 0 and number of cycles: 0 
