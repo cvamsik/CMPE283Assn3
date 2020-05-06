@@ -1097,11 +1097,18 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 		printk("In leaf 0x4ffffffd");
 		if(ecx>=0 && ecx<=68 && ecx!=35 && ecx!=38 && ecx!=42 && ecx!=65 )
 		{
-		printk("eax is 0x4ffffffd exit_counter for ecx = %d is %lld\n",(int)ecx,atomic64_read(&exit_counter[(int)ecx]));
-		eax=atomic64_read(&exit_counter[(int)ecx]);
-		ebx=0;
-		ecx=0;
-		edx=0;
+			if(ecx==3 || ecx==4 ||ecx==6 ||ecx==11 ||ecx==16 ||ecx==17 ||ecx==34 ||ecx==36 ||ecx==41 ||ecx==51 ||ecx==63 ||ecx==64 ||ecx==66){
+			printk("exit value = %d not allowed by KVM ",ecx);
+			eax=ebx=ecx=edx=0;
+	
+			}
+			else{
+			printk("eax is 0x4ffffffd exit_counter for ecx = %d is %lld\n",(int)ecx,atomic64_read(&exit_counter[(int)ecx]));
+			eax=atomic64_read(&exit_counter[(int)ecx]);
+			ebx=0;
+			ecx=0;
+			edx=0;
+			}
 		}
 		else{
 		printk("exit value = %d not defined in SDM ",ecx);
@@ -1110,13 +1117,32 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 		}
 	}
 	else if(eax== 0x4ffffffc){
+
+		if(ecx>=0 && ecx<=68 && ecx!=35 && ecx!=38 && ecx!=42 && ecx!=65 )
+		{
+
+		if(ecx==3 || ecx==4 ||ecx==6 ||ecx==11 ||ecx==16 ||ecx==17 ||ecx==34 ||ecx==36 ||ecx==41 ||ecx==51 ||ecx==63 ||ecx==64 ||ecx==66){
+		printk("exit value = %d not allowed by KVM ",ecx);
+		eax=ebx=ecx=edx=0;
+	
+		}
+		else{
 		printk("In leaf 0x4ffffffc");
 		printk("eax is 0x4ffffffc exit_cycles for ecx = %d is %lld\n",(int)ecx,atomic64_read(&exit_cycles[(int)ecx]));
 		ebx=(atomic64_read(&exit_cycles[(int)ecx])>>32);
 		ecx=(atomic64_read(&exit_cycles[(int)ecx]) & 0xffffffff);
 		eax=edx=0;
+		}
+}
+else{
+		printk("exit value = %d not defined in SDM ",ecx);
+		eax=ebx=ecx=0;
+		edx=0xffffffff;	
+		}
+
 	}
-	else if(eax== 0x4ffffffb){
+	else if(eax== 0x4ffffffb)
+		{		
 		printk("In leaf 0x4ffffffb");
 		eax=ebx=ecx=edx=0xffffffff;
 		uint32_t i=0;
