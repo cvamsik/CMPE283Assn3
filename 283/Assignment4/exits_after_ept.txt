@@ -68,3 +68,90 @@
 [ 3482.594369] Exit number 66 and number of exits: 0 and number of cycles: 0 
 [ 3482.594372] Exit number 67 and number of exits: 0 and number of cycles: 0 
 [ 3482.594374] Exit number 68 and number of exits: 0 and number of cycles: 0 
+
+
+
+
+
+--------------------------Run 2
+
+Exits:
+
+CPU 0:
+   0x4fffffff 0x00: eax=0x08843ce5 ebx=0x00000000 ecx=0x00000000 edx=0x00000000
+CPU 1:
+   0x4fffffff 0x00: eax=0x08843d77 ebx=0x00000000 ecx=0x00000000 edx=0x00000000
+
+
+
+[46725.277849] In leaf 0x4ffffffb
+[46725.277850] Exit number 0 and number of exits: 1472574 and number of cycles: 71375609579 
+[46725.277851] Exit number 1 and number of exits: 0 and number of cycles: 0 
+[46725.277852] Exit number 2 and number of exits: 0 and number of cycles: 0 
+[46725.277853] Exit number 3 and number of exits: 0 and number of cycles: 0 
+[46725.277853] Exit number 4 and number of exits: 0 and number of cycles: 0 
+[46725.277854] Exit number 5 and number of exits: 0 and number of cycles: 0 
+[46725.277855] Exit number 6 and number of exits: 0 and number of cycles: 0 
+[46725.277855] Exit number 7 and number of exits: 0 and number of cycles: 0 
+[46725.277856] Exit number 8 and number of exits: 1 and number of cycles: 12664 
+[46725.277857] Exit number 9 and number of exits: 0 and number of cycles: 0 
+[46725.277858] Exit number 10 and number of exits: 288663 and number of cycles: 5247728841 
+[46725.277858] Exit number 11 and number of exits: 0 and number of cycles: 0 
+[46725.277859] Exit number 12 and number of exits: 0 and number of cycles: 0 
+[46725.277860] Exit number 13 and number of exits: 0 and number of cycles: 0 
+[46725.277861] Exit number 14 and number of exits: 163860 and number of cycles: 8861573726 
+[46725.277861] Exit number 15 and number of exits: 0 and number of cycles: 0 
+[46725.277862] Exit number 16 and number of exits: 0 and number of cycles: 0 
+[46725.277862] Exit number 17 and number of exits: 0 and number of cycles: 0 
+[46725.277863] Exit number 18 and number of exits: 0 and number of cycles: 0 
+[46725.277864] Exit number 19 and number of exits: 0 and number of cycles: 0 
+[46725.277864] Exit number 20 and number of exits: 0 and number of cycles: 0 
+[46725.277865] Exit number 21 and number of exits: 0 and number of cycles: 0 
+[46725.277866] Exit number 22 and number of exits: 0 and number of cycles: 0 
+[46725.277866] Exit number 23 and number of exits: 0 and number of cycles: 0 
+[46725.277867] Exit number 24 and number of exits: 0 and number of cycles: 0 
+[46725.277867] Exit number 25 and number of exits: 0 and number of cycles: 0 
+[46725.277868] Exit number 26 and number of exits: 0 and number of cycles: 0 
+[46725.277869] Exit number 27 and number of exits: 0 and number of cycles: 0 
+[46725.277870] Exit number 28 and number of exits: 8410464 and number of cycles: 129374777310 
+[46725.277870] Exit number 29 and number of exits: 42 and number of cycles: 2250207 
+[46725.277871] Exit number 30 and number of exits: 656731 and number of cycles: 5943595839 
+[46725.277872] Exit number 31 and number of exits: 3031 and number of cycles: 34603770 
+[46725.277873] Exit number 32 and number of exits: 0 and number of cycles: 0 
+[46725.277873] Exit number 33 and number of exits: 0 and number of cycles: 0 
+[46725.277874] Exit number 34 and number of exits: 0 and number of cycles: 0 
+[46725.277875] Exit number 35 and number of exits: 0 and number of cycles: 0 
+[46725.277875] Exit number 36 and number of exits: 0 and number of cycles: 0 
+[46725.277876] Exit number 37 and number of exits: 0 and number of cycles: 0 
+[46725.277877] Exit number 38 and number of exits: 0 and number of cycles: 0 
+[46725.277877] Exit number 39 and number of exits: 0 and number of cycles: 0 
+[46725.277878] Exit number 40 and number of exits: 26493 and number of cycles: 1087765502 
+[46725.277879] Exit number 41 and number of exits: 0 and number of cycles: 0 
+[46725.277879] Exit number 42 and number of exits: 0 and number of cycles: 0 
+[46725.277880] Exit number 43 and number of exits: 0 and number of cycles: 0 
+[46725.277881] Exit number 44 and number of exits: 0 and number of cycles: 0 
+[46725.277881] Exit number 45 and number of exits: 0 and number of cycles: 0 
+[46725.277882] Exit number 46 and number of exits: 0 and number of cycles: 0 
+[46725.277882] Exit number 47 and number of exits: 0 and number of cycles: 0 
+[46725.277883] Exit number 48 and number of exits: 129524246 and number of cycles: 760158875520 
+[46725.277884] Exit number 49 and number of exits: 0 and number of cycles: 0 
+[46725.277885] Exit number 50 and number of exits: 0 and number of cycles: 0 
+[46725.277885] Exit number 51 and number of exits: 0 and number of cycles: 0 
+[46725.277886] Exit number 52 and number of exits: 0 and number of cycles: 0 
+[46725.277887] Exit number 53 and number of exits: 0 and number of cycles: 0 
+[46725.277887] Exit number 54 and number of exits: 39 and number of cycles: 402484 
+[46725.277888] Exit number 55 and number of exits: 12 and number of cycles: 214495 
+[46725.277889] Exit number 56 and number of exits: 0 and number of cycles: 0 
+[46725.277890] Exit number 57 and number of exits: 0 and number of cycles: 0 
+[46725.277890] Exit number 58 and number of exits: 119447 and number of cycles: 7063501242 
+[46725.277891] Exit number 59 and number of exits: 0 and number of cycles: 0 
+[46725.277892] Exit number 60 and number of exits: 0 and number of cycles: 0 
+[46725.277892] Exit number 61 and number of exits: 0 and number of cycles: 0 
+[46725.277893] Exit number 62 and number of exits: 0 and number of cycles: 0 
+[46725.277893] Exit number 63 and number of exits: 0 and number of cycles: 0 
+[46725.277894] Exit number 64 and number of exits: 0 and number of cycles: 0 
+[46725.277895] Exit number 65 and number of exits: 0 and number of cycles: 0 
+[46725.277895] Exit number 66 and number of exits: 0 and number of cycles: 0 
+[46725.277896] Exit number 67 and number of exits: 0 and number of cycles: 0 
+[46725.277897] Exit number 68 and number of exits: 0 and number of cycles: 0 
+

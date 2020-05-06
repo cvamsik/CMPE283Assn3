@@ -67,3 +67,96 @@
 [ 3188.655778] Exit number 65 and number of exits: 0 and number of cycles: 0 
 [ 3188.655779] Exit number 66 and number of exits: 0 and number of cycles: 0 
 [ 3188.655779] Exit number 67 and number of exits: 0 and number of cycles: 0
+
+
+
+
+
+
+
+
+
+----------------------Run 2
+Total exits:
+
+CPU 0:
+   0x4fffffff 0x00: eax=0x07e3fb46 ebx=0x00000000 ecx=0x00000000 edx=0x00000000
+CPU 1:
+   0x4fffffff 0x00: eax=0x07e3fb4e ebx=0x00000000 ecx=0x00000000 edx=0x00000000
+
+
+
+
+[46339.188192] eax is 1342177275 and ecx is 0
+[46339.188193] In leaf 0x4ffffffb
+[46339.188194] Exit number 0 and number of exits: 20407 and number of cycles: 3176903574 
+[46339.188195] Exit number 1 and number of exits: 0 and number of cycles: 0 
+[46339.188196] Exit number 2 and number of exits: 0 and number of cycles: 0 
+[46339.188197] Exit number 3 and number of exits: 0 and number of cycles: 0 
+[46339.188197] Exit number 4 and number of exits: 0 and number of cycles: 0 
+[46339.188198] Exit number 5 and number of exits: 0 and number of cycles: 0 
+[46339.188199] Exit number 6 and number of exits: 0 and number of cycles: 0 
+[46339.188199] Exit number 7 and number of exits: 0 and number of cycles: 0 
+[46339.188200] Exit number 8 and number of exits: 1 and number of cycles: 12664 
+[46339.188201] Exit number 9 and number of exits: 0 and number of cycles: 0 
+[46339.188202] Exit number 10 and number of exits: 271375 and number of cycles: 4975275795 
+[46339.188202] Exit number 11 and number of exits: 0 and number of cycles: 0 
+[46339.188203] Exit number 12 and number of exits: 0 and number of cycles: 0 
+[46339.188204] Exit number 13 and number of exits: 0 and number of cycles: 0 
+[46339.188204] Exit number 14 and number of exits: 0 and number of cycles: 0 
+[46339.188205] Exit number 15 and number of exits: 0 and number of cycles: 0 
+[46339.188205] Exit number 16 and number of exits: 0 and number of cycles: 0 
+[46339.188206] Exit number 17 and number of exits: 0 and number of cycles: 0 
+[46339.188207] Exit number 18 and number of exits: 0 and number of cycles: 0 
+[46339.188207] Exit number 19 and number of exits: 0 and number of cycles: 0 
+[46339.188208] Exit number 20 and number of exits: 0 and number of cycles: 0 
+[46339.188208] Exit number 21 and number of exits: 0 and number of cycles: 0 
+[46339.188209] Exit number 22 and number of exits: 0 and number of cycles: 0 
+[46339.188210] Exit number 23 and number of exits: 0 and number of cycles: 0 
+[46339.188210] Exit number 24 and number of exits: 0 and number of cycles: 0 
+[46339.188211] Exit number 25 and number of exits: 0 and number of cycles: 0 
+[46339.188212] Exit number 26 and number of exits: 0 and number of cycles: 0 
+[46339.188212] Exit number 27 and number of exits: 0 and number of cycles: 0 
+[46339.188213] Exit number 28 and number of exits: 535932 and number of cycles: 7765485501 
+[46339.188214] Exit number 29 and number of exits: 40 and number of cycles: 1530951 
+[46339.188215] Exit number 30 and number of exits: 525508 and number of cycles: 4811404198 
+[46339.188215] Exit number 31 and number of exits: 2582 and number of cycles: 30534806 
+[46339.188216] Exit number 32 and number of exits: 0 and number of cycles: 0 
+[46339.188217] Exit number 33 and number of exits: 0 and number of cycles: 0 
+[46339.188217] Exit number 34 and number of exits: 0 and number of cycles: 0 
+[46339.188218] Exit number 35 and number of exits: 0 and number of cycles: 0 
+[46339.188219] Exit number 36 and number of exits: 0 and number of cycles: 0 
+[46339.188219] Exit number 37 and number of exits: 0 and number of cycles: 0 
+[46339.188220] Exit number 38 and number of exits: 0 and number of cycles: 0 
+[46339.188221] Exit number 39 and number of exits: 0 and number of cycles: 0 
+[46339.188221] Exit number 40 and number of exits: 22206 and number of cycles: 1026459789 
+[46339.188222] Exit number 41 and number of exits: 0 and number of cycles: 0 
+[46339.188223] Exit number 42 and number of exits: 0 and number of cycles: 0 
+[46339.188223] Exit number 43 and number of exits: 0 and number of cycles: 0 
+[46339.188224] Exit number 44 and number of exits: 0 and number of cycles: 0 
+[46339.188224] Exit number 45 and number of exits: 0 and number of cycles: 0 
+[46339.188225] Exit number 46 and number of exits: 0 and number of cycles: 0 
+[46339.188226] Exit number 47 and number of exits: 0 and number of cycles: 0 
+[46339.188227] Exit number 48 and number of exits: 129506634 and number of cycles: 759773749662 
+[46339.188227] Exit number 49 and number of exits: 0 and number of cycles: 0 
+[46339.188228] Exit number 50 and number of exits: 0 and number of cycles: 0 
+[46339.188228] Exit number 51 and number of exits: 0 and number of cycles: 0 
+[46339.188229] Exit number 52 and number of exits: 0 and number of cycles: 0 
+[46339.188230] Exit number 53 and number of exits: 0 and number of cycles: 0 
+[46339.188230] Exit number 54 and number of exits: 29 and number of cycles: 329642 
+[46339.188231] Exit number 55 and number of exits: 9 and number of cycles: 146922 
+[46339.188232] Exit number 56 and number of exits: 0 and number of cycles: 0 
+[46339.188233] Exit number 57 and number of exits: 0 and number of cycles: 0 
+[46339.188233] Exit number 58 and number of exits: 0 and number of cycles: 0 
+[46339.188234] Exit number 59 and number of exits: 0 and number of cycles: 0 
+[46339.188235] Exit number 60 and number of exits: 0 and number of cycles: 0 
+[46339.188235] Exit number 61 and number of exits: 0 and number of cycles: 0 
+[46339.188236] Exit number 62 and number of exits: 0 and number of cycles: 0 
+[46339.188236] Exit number 63 and number of exits: 0 and number of cycles: 0 
+[46339.188237] Exit number 64 and number of exits: 0 and number of cycles: 0 
+[46339.188238] Exit number 65 and number of exits: 0 and number of cycles: 0 
+[46339.188238] Exit number 66 and number of exits: 0 and number of cycles: 0 
+[46339.188239] Exit number 67 and number of exits: 0 and number of cycles: 0 
+[46339.188239] Exit number 68 and number of exits: 0 and number of cycles: 0 
+
+
